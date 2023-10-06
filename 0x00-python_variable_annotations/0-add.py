@@ -4,6 +4,6 @@
 
 
 def add(a: float, b: float) -> float:
-    '''Adds two floating-point numbers.
+    '''Adds two floating-point number.
     '''
     return a + b 
