@@ -6,8 +6,10 @@ value of 10) named wait_random that waits for
 seconds and eventually returns it.
 '''
 import random
+import asyncio
 
 
-def wait_random(max_delay=10):
-    randNum = random.randrange(0, max_delay)
-    return randNum
+async def wait_random(max_delay=10):
+    randsec = random.uniform(0, max_delay)
+    await asyncio.sleep(randsec)
+    return randsec
